@@ -57,10 +57,12 @@ Unless explicitly contradicted below, assume that all of Apple's guidelines appl
  * Don't use `@synthesize` unless the compiler requires it. Note that optional properties in protocols must be explicitly synthesized in order to exist.
  * Instance variables should be prefixed with an underscore (just like when implicitly synthesized).
  * Always put a space between an object type and the protocol it conforms to.
+ * Don't put a space between a class and its generic argument list.
 
 ```objc
 @property (attributes) id <Protocol> object;
 @property (nonatomic, strong) NSObject <Protocol> *object;
+@property (nonatomic, copy) NSArray<NSString *> *titles;
 ```
 
  * C function declarations should have no space before the opening parenthesis, and should be namespaced just like a class.
