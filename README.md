@@ -238,3 +238,18 @@ It's recommended to add this repo as a submodule and make a symlink:
 $ git submodule add git@github.com:flix-tech/objective-c-style-guide.git code-style
 $ ln -s code-style/clang-format .clang-format
 ```
+
+## Git hooks
+
+This repo provides a pre-commit hook for Git. The hook checks if changed lines comply with coding style and
+prevents commit if they don't. Hook assumes that clang-format binary is in the PATH.
+
+Scripts are courtesy of [Badoo](https://github.com/badoo/objective-c-style-guide) and distributed under
+[MIT License](scripts/LICENSE).
+See also the [detailed blog post](https://techblog.badoo.com/blog/2015/09/21/clang-format-as-a-guard-for-objective-c-code-style/) on the matter.
+
+To install pre-commit hook, run the following command:
+
+```bash
+$ code-style/scripts/install_pre_commit_hook.py
+```
