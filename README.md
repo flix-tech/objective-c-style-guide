@@ -227,6 +227,7 @@ NS_ASSUME_NONNULL_END
  * Try to avoid `andDo` while using mocks because using `NSInvocation` is error-prone. Consider using `andCall` or `+[OCMArg checkWithBlock:]` instead.
  * Name test methods using following template: `test_<#method name or alias#>_<#conditions#>_<#expected outcome#>`.
 Use alias if the actual method name is too bulky. For simple tests without important preconditons and with obvious outcome (like JSON deserialization, for example) use simpler template: `test_<#method name or alias>`.
+ * Always set all instance variables and properties of a test case to `nil` in `-tearDown` method. [Here's why](http://qualitycoding.org/teardown/).
 
 ## clang-format
 
