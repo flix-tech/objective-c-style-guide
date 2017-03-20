@@ -1,10 +1,11 @@
 BasedOnStyle: LLVM
 AlignAfterOpenBracket: false
+AllowShortBlocksOnASingleLine: true
 AllowShortFunctionsOnASingleLine: None
 AlwaysBreakBeforeMultilineStrings: false
 BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Linux
-ColumnLimit: 130
+ColumnLimit: 0
 ExperimentalAutoDetectBinPacking: true
 IndentCaseLabels: true
 IndentWidth: 4
