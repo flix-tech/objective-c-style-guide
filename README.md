@@ -159,7 +159,7 @@ NSArray *theStuff = @[ @1, @2, @3 ];
 NSDictionary *keyedStuff = @{ GHDidCreateStyleGuide : @YES };
 ```
 
- * Longer or more complex literals should be split over multiple lines with a trailing comma:
+ * Longer or more complex literals should be split over multiple lines with a trailing comma (it helps to reduce the amount of VCS noise by making it possible to add new lines without changing existing ones):
 
 ``` objc
 NSArray *theStuff = @[
